@@ -10,7 +10,7 @@
       font-family: "Georgia", serif;
       background: url('Images/386745.jpg') no-repeat center center fixed;
       background-size: cover;
-      color: #f2f2f2; /* Soft white text */
+      color: #f2f2f2;
       line-height: 1.6;
     }
 
@@ -29,7 +29,7 @@
 
     header nav a {
       text-decoration: none;
-      color: #e6e6fa; /* Lavender */
+      color: #e6e6fa;
       font-size: 1rem;
       font-weight: 500;
       transition: color 0.2s ease;
@@ -47,7 +47,7 @@
       justify-content: center;
       align-items: center;
       text-align: center;
-      background: rgba(0, 0, 0, 0.45); /* Overlay for readability */
+      background: rgba(0, 0, 0, 0.45);
       padding: 2rem;
     }
 
@@ -69,7 +69,7 @@
       display: inline-block;
       padding: 0.7rem 1.4rem;
       border-radius: 0.5rem;
-      background: #6c63ff; /* Indigo accent */
+      background: #6c63ff;
       color: #ffffff;
       text-decoration: none;
       font-weight: bold;
@@ -137,17 +137,44 @@
       text-decoration: underline;
     }
 
+    /* ---- AFFILIATION ---- */
+    .affiliation {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      text-align: center;
+    }
+
+    .affiliation img {
+      width: 120px;
+      height: auto;
+      border-radius: 0.5rem;
+    }
+
+    .affiliation a {
+      color: #c3c9ff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+
+    .affiliation a:hover {
+      color: #ffffff;
+      text-decoration: underline;
+    }
+
     /* ---- CONTACT ---- */
     #contact p {
       margin: 0.5rem 0;
     }
 
     #contact strong {
-      color: #ffd700; /* Gold for labels */
+      color: #ffd700;
     }
 
     #contact a {
-      color: #c3c9ff; /* Bright cyan for links */
+      color: #c3c9ff;
       text-decoration: none;
       font-weight: bold;
     }
@@ -171,6 +198,7 @@
     <nav>
       <a href="#projects">Projects</a>
       <a href="#about">About</a>
+      <a href="#affiliation">Affiliation</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
@@ -199,6 +227,10 @@
           <h3><a href="https://github.com/HanaChan02/HanaChan02" target="_blank">Profile Repository</a></h3>
           <p>Personal profile repo featuring my GitHub README and projects overview.</p>
         </div>
+        <div class="card">
+          <h3><a href="https://github.com/HanaChan02/VisionX-Sentinel" target="_blank">VisionX Sentinel</a></h3>
+          <p>A vision-based project on surveillance.</p>
+        </div>
       </div>
     </section>
 
@@ -206,6 +238,15 @@
     <section id="about">
       <h2>About</h2>
       <p>I am exploring programming, algorithms, and web technologies. I enjoy building projects that solve problems and experimenting with new frameworks and tools. Currently, I’m focusing on enhancing my full-stack development skills and preparing for future opportunities in tech.</p>
+    </section>
+
+    <!-- Affiliation Section -->
+    <section id="affiliation">
+      <h2>Affiliation</h2>
+      <div class="affiliation">
+        <img src="Images/projukti-lipi-logo.png" alt="Projukti Lipi Logo">
+        <p>Currently affiliated with <a href="https://projuktilipi.vercel.app/" target="_blank">Projukti Lipi</a></p>
+      </div>
     </section>
 
     <!-- Contact Section -->
